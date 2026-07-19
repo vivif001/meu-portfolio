@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingrid Vitória — Desenvolvedora Fullstack</title>
+<meta name="description" content="Portfólio de Ingrid Vitória, desenvolvedora fullstack em formação.">
+<!-- importar fontes-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+<!-- importar icones para mostrar-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+
+<link rel="stylesheet" href="portifolio.css">
+</head>
+<body>
+<!-- conseguir montar os pontinhos-->
+<div class="bg-decor bg-decor--tr" aria-hidden="true"></div>
+<div class="bg-decor bg-decor--bl" aria-hidden="true"></div>
+
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Navegação principal">
+    <a href="#inicio" class="logo">Ingrid<span>.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio" class="nav-link active" data-section="inicio">Início</a></li>
+      <li><a href="#sobre" class="nav-link" data-section="sobre">Sobre mim</a></li>
+      <li><a href="#habilidades" class="nav-link" data-section="habilidades">Habilidades</a></li>
+      <li><a href="#projetos" class="nav-link" data-section="projetos">Projetos</a></li>
+      <li><a href="#certificados" class="nav-link" data-section="certificados">Certificados</a></li>
+      <li><a href="#contato" class="nav-link" data-section="contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+  <section id="inicio" class="section inicio">
+    <div class="inicio__content">
+      <span class="badge"><i class="fa-solid fa-magnifying-glass"></i> Desenvolvedora fullstack</span>
+
+      <h1 class="inicio__title">
+        <span class="inicio__title-light">Olá, eu sou</span>
+        <span class="inicio__title-bold">Ingrid Vitória</span>
+      </h1>
+
+      <p class="inicio__subtitle">Desenvolvedora fullstack em formação</p>
+
+      <p class="inicio__text">
+        Apaixonada por tecnologia e por transformar ideias em soluções eficientes
+        para por em prática. Busco aprender e evoluir todos os dias.
+      </p>
+
+      <div class="inicio__actions">
+        <a href="#projetos" class="btn btn--solid">Ver projetos <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="curriculo.pdf" class="btn btn--outline" download>Baixar currículo <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+
+      <ul class="tech-row" aria-label="Tecnologias principais">
+        <li class="icone-tecnologia" title="HTML5"><i class="devicon-html5-plain colored"></i></li>
+        <li class="icone-tecnologia" title="Java"><i class="devicon-java-plain colored"></i></li>
+        <li class="icone-tecnologia" title="Design & Social Mídia"><i class="fa-solid fa-bullhorn"></i></li>
+        <li class="icone-tecnologia" title="JavaScript"><i class="devicon-javascript-plain colored"></i></li>
+        <li class="icone-tecnologia" title="CSS3"><i class="devicon-css3-plain colored"></i></li>
+      </ul>
+    </div>
+
+    <div class="inicio__photo">
+      <div class="pilha-de-fotos">
+        <div class="pilha-de-fotos__back"></div>
+        <div class="pilha-de-fotos__mid"></div>
+        <img src="profile.jpg" alt="Foto de Ingrid Vitória" class="pilha-de-fotos__img">
+      </div>
+      <div class="dots dots--photo" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="sobre" class="section sobre">
+    <div class="sobre__text">
+      <p class="eyebrow">Sobre mim</p>
+      <h2 class="section-title">Desenvolvedora fullstack <br>e social mídia</h2>
+
+      <p>
+        Sou estudante do curso de Análise e Desenvolvimento de Sistemas, faço
+        minha graduação no Instituto Federal de Pernambuco.
+      </p>
+      <p>
+        Tenho experiência também com design e mídias sociais. Trabalhei com a
+        administração de alguns perfis do Instagram — dá uma olhadinha nos
+        meus trabalhos!
+      </p>
+      <p>
+        Sou apaixonada por música e literatura, principalmente a brasileira.
+        Adoro esportes e treinos, tanto quanto amo programar e criar telas.
+      </p>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Formação</h3>
+          <p>ADS — IFPE</p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Objetivo</h3>
+          <p>Crescer como dev fullstack</p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-comments"></i>
+          <h3>Social mídia</h3>
+          <p>Design & gestão de perfis</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sobre__photo">
+      <div class="pilha-de-fotos pilha-de-fotos--sm">
+        <div class="pilha-de-fotos__back"></div>
+        <div class="pilha-de-fotos__mid"></div>
+        <img src="profile.jpg" alt="Foto de Ingrid Vitória" class="pilha-de-fotos__img">
+      </div>
+      <div class="dots dots--photo" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+  <section id="habilidades" class="section habilidades">
+    <p class="eyebrow">Habilidades</p>
+    <h2 class="section-title section-title--underline">Minhas habilidades</h2>
+
+    <div class="habilidades__grid">
+      <ul class="skills-list">
+        <li class="skill">
+          <i class="devicon-java-plain colored skill__icon"></i>
+          <span class="habilidade_nome">Java</span>
+          <span class="habilidade_bar"><span class="skill__fill" style="--value:80%"></span></span>
+          <span class="habilidade_pct">80%</span>
+        </li>
+        <li class="skill">
+          <i class="devicon-javascript-plain colored skill__icon"></i>
+          <span class="habilidade_nome">JavaScript</span>
+          <span class="habilidade_bar"><span class="skill__fill" style="--value:80%"></span></span>
+          <span class="habilidade_pct">90%</span>
+        </li>
+        <li class="skill">
+          <i class="devicon-html5-plain colored skill__icon"></i>
+          <span class="habilidade_nome">HTML e CSS</span>
+          <span class="habilidade_bar"><span class="skill__fill" style="--value:90%"></span></span>
+          <span class="habilidade_pct">90%</span>
+        </li>
+        <li class="skill">
+          <i class="devicon-photoshop-plain colored skill__icon"></i>
+          <span class="habilidade_nome">Photoshop</span>
+          <span class="habilidade_bar"><span class="skill__fill" style="--value:70%"></span></span>
+          <span class="habilidade_pct">70%</span>
+        </li>
+        <li class="skill">
+          <i class="devicon-figma-plain colored skill__icon"></i>
+          <span class="habilidade_nome">Figma</span>
+          <span class="habilidade_bar"><span class="skill__fill" style="--value:75%"></span></span>
+          <span class="habilidade_pct">75%</span>
+        </li>
+        <li class="skill">
+          <i class="fa-solid fa-palette skill__icon" style="color:#00C4CC"></i>
+          <span class="habilidade_nome">Canva</span>
+          <span class="habilidade_bar"><span class="skill__fill" style="--value:95%"></span></span>
+          <span class="habilidade_pct">95%</span>
+        </li>
+      </ul>
+
+      <div class="habilidades__side">
+        <blockquote class="note-card">
+          Sou apaixonada por música e literatura, principalmente a brasileira.
+          Adoro esportes e treinos, tanto quanto amo programar e criar telas.
+        </blockquote>
+
+        <div class="mini-gallery">
+          <div class="mini-gallery__item"><i class="devicon-github-original"></i></div>
+          <div class="mini-gallery__item"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="mini-gallery__item"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="mini-gallery__item"><i class="fa-solid fa-pen-ruler"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="projetos" class="section projetos">
+    <div class="projetos__head">
+      <h2 class="section-title">Meus projetos</h2>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prevProject" aria-label="Projeto anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn" id="nextProject" aria-label="Próximo projeto"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="carousel" id="projectsCarousel">
+      <article class="project-card">
+        <div class="project-card__corner"></div>
+        <h3>O Churrasqueiro</h3>
+        <p>
+          Projeto voltado para a disciplina de Linguagem de Programação
+          Orientada a Objetos, com a linguagem Java. Desenvolvido em Java JDK 11,
+          usando o Maven como gerenciador de dependências e o banco de dados H2.
+        </p>
+        <a href="#" class="btn btn--sm">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__corner"></div>
+        <h3>Q-Lab</h3>
+        <p>
+          Sistema desktop para gerenciamento de reservas dos laboratórios de
+          informática do IFPE Campus Paulista. Tecnologias: Java, JavaSwing e
+          MySQL. Projeto ainda em andamento.
+        </p>
+        <a href="#" class="btn btn--sm">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__corner"></div>
+        <h3>Nexus-IFPE</h3>
+        <p>
+          Projeto voltado para a disciplina de Introdução à Programação do
+          curso de ADS, focado em ajudar estudantes do ensino médio em
+          processos de vestibulares. Dados persistidos em JSON, interface em
+          PyQt5 com telas desenhadas no Qt Designer.
+        </p>
+        <a href="#" class="btn btn--sm">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__corner"></div>
+        <h3>Perfis do Instagram</h3>
+        <p>
+          Gerenciamento de três perfis do Instagram: um voltado para
+          alimentação (hamburgueria) e dois voltados para educação — uma liga
+          de engenharia de software e um diretório acadêmico.
+        </p>
+        <a href="#" class="btn btn--sm">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+
+  <section id="certificados" class="section certificados">
+    <h2 class="section-title">Certificados</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="project-card__corner"></div>
+        <i class="fa-solid fa-certificate"></i>
+        <p>certificado</p>
+      </div>
+      <div class="cert-card">
+        <div class="project-card__corner"></div>
+        <i class="fa-solid fa-certificate"></i>
+        <p>certificado</p>
+      </div>
+      <div class="cert-card">
+        <div class="project-card__corner"></div>
+        <i class="fa-solid fa-certificate"></i>
+        <p>certificado</p>
+      </div>
+      <div class="cert-card">
+        <div class="project-card__corner"></div>
+        <i class="fa-solid fa-certificate"></i>
+        <p>certificado</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="contato" class="section contato">
+    <div class="contato__info">
+      <h2 class="section-title">Vamos conversar?</h2>
+      <p>
+        Tem uma oportunidade, ideia de projeto ou quer só trocar uma ideia
+        legal? Entra em contato comigo!
+      </p>
+
+      <ul class="social-list">
+        <li>
+          <span class="social-icon"><i class="fa-brands fa-github"></i></span>
+          <div><strong>GitHub</strong><a href="https://github.com/vivif001" target="_blank" rel="noopener">github.com/ingridvitoria</a></div>
+        </li>
+        <li>
+          <span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+          <div><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/ingridvofranca?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">linkedin.com/in/ingridvitoria</a></div>
+        </li>
+        <li>
+          <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
+          <div><strong>Instagram</strong><a href="https://www.instagram.com/vivizsxhttps://www.instagram.com/_vivizsx._?igsh=ZGRmdmdqMnc3dWFj&utm_source=qr" target="_blank" rel="noopener">@vivizsx</a></div>
+        </li>
+        <li>
+          <span class="social-icon"><i class="fa-brands fa-whatsapp"></i></span>
+          <div><strong>WhatsApp</strong><a href="#" target="_blank" rel="noopener">Falar agora</a></div>
+        </li>
+        <li>
+          <span class="social-icon"><i class="fa-solid fa-envelope"></i></span>
+          <div><strong>E-mail</strong><a href="mailto:ingridfrancaoli2007@gmail.com">ingridfrancaoli2007@gmail</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contato__form" id="contatoForm" novalidate>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" maxlength="50" required>
+        </div>
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" maxlength="50" required>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" maxlength="150"required>
+      </div>
+
+      <div class="form-field">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" maxlength="250" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--solid btn--block">Enviar mensagem <i class="fa-solid fa-paper-plane"></i></button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Vivi. Feito com carinho, um pouco de estresse e bastante códigos.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+<script src="scriptportifolio.js"></script>
+</body>
+</html>
