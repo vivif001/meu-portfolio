@@ -341,6 +341,33 @@
         <textarea id="mensagem" name="mensagem" rows="6" maxlength="250" required></textarea>
       </div>
 
+      <div class="form-field">
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep" maxlength="150"required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="rua">Rua</label>
+          <input type="text" id="rua" name="rua" maxlength="50" readonly>
+        </div>
+        <div class="form-field">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" maxlength="50" readonly>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" maxlength="50" readonly>
+        </div>
+        <div class="form-field">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" maxlength="50" readonly>
+        </div>
+      </div>
+
       <button type="submit" class="btn btn--solid btn--block">Enviar mensagem <i class="fa-solid fa-paper-plane"></i></button>
       <p class="form-status" id="formStatus" role="status"></p>
     </form>
