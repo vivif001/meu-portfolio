@@ -113,4 +113,27 @@ document.addEventListener('DOMContentLoaded', () => {
     status.textContent = 'Abrindo seu aplicativo de e-mail...';
   });
 
-});
+
+  form.cep.addEventListener('input', () => {
+    let cep = form.cep.value.replace(/\D/g, '');
+
+    if (cep.length === 8) {
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(res => res.json())
+        .then(data => {
+          if (!data.erro) {
+            form.rua.value = data.logradouro || '';
+            form.bairro.value = data.bairro || '';
+            form.cidade.value = data.localidade || '';
+            form.estado.value = data.uf || '';
+          } else {
+            alert("CEP não encontrado");
+          }
+        })
+        .catch(erro => {
+          console.error("Erro ao buscar CEP:", erro);
+          alert("Erro ao buscar o CEP. Tente novamente.");
+        });
+    }
+  });
+  });
